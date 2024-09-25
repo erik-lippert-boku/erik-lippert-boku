@@ -1,0 +1,23 @@
+name: Update Dog
+
+on:  
+  schedule:
+    - cron: "0 */6 * * *"
+  push:
+
+jobs:
+  update_templates:
+    name: "Update Templates"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "📥  Fetching Repository Contents"
+        uses: actions/checkout@main
+
+      - name: Update README.md
+        run: |
+          pip3 install -r requirements.txt
+          python3 replace_image.py
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git commit -am "Automated dog update"
+          git push
