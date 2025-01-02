@@ -5,4 +5,4 @@ I had the pleasure of being an engineering intern at Boku from July to September
 To make your day a little better though, this `README` is updated every 6 hours with a fresh new dog image:
 
 
-![Dog image](https://images.dog.ceo/breeds/hound-ibizan/n02091244_110.jpg)
+![Dog image](https://images.dog.ceo/breeds/bulldog-english/jager-1.jpg)
